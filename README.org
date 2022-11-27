@@ -1,0 +1,36 @@
+* dotfiles
+The best dotfiles for people that are me.
+In its current state, it is for personal use.
+You may edit these files to your heart's content, as per the project's license.
+** Components
+*** Main Programs
+- Distribution: Arch Linux
+- Display Server: Xorg
+- Window Manager: BSPWM
+- Audio: Pipewire
+- Terminal Emulator: URxvt
+- Shell: Bash
+- Font: Jetbrains Mono
+- Theme: Ayu Dark
+- Text Editor: emacs
+- Web Browser: Firefox
+*** Other Programs
+- Flameshot: For screenshots.
+- Keepass: For password management.
+** Installation
+These dotfiles are managed through GNU Stow.
+Run these commands,
+#+BEGIN_SRC bash
+  sudo pacman -S git
+  git clone https://github.com/brsponge/dotfiles.git ~/.dotfiles
+  cd ~/.dotfiles
+  # This will install a lot of programs, even some that are not essential for the dotfiles.
+  sudo pacman -S $(awk '{print $1}' dependencies.txt)
+  stow -t ~ *
+#+END_SRC
+then reboot.
+This will install everything except my emacs configuration.
+Here is my emacs configuration, where there are instructions to use my configuration.
+[[https://github.com/brsponge/emacs.d][emacs.d]]
+** License
+[[file:LICENSE][GNU General Public License Version 3]]

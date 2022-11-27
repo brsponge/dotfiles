@@ -1,0 +1,59 @@
+control + alt + t 
+		  urxvt
+
+control + alt + e
+		  emacsclient -c -a "emacs"
+
+control + alt + w
+		  firefox
+
+control + alt + f
+		  flameshot gui
+
+control + alt + q
+		  bspc node -c
+
+control + alt + shift + q
+		  bspc node -k
+
+control + alt + r
+		  pkill -USR1 -x sxhkd
+
+control + alt + shift + r
+		  bspc wm -r
+
+control + alt + Escape
+		  kill $XSESSION_PID
+
+control + alt + {h,j,k,l}
+		  bspc node -f {west,south,north,east}
+
+control + alt + shift + {h,j,k,l}
+		  bspc node -s {west,south,north,east}
+
+control + alt + n
+		  bspc desktop -f next.local
+
+control + alt + p
+		  bspc desktop -f prev.local
+
+control + alt + shift + n
+		  bspc node -d next.local
+
+control + alt + shift + p
+		  bspc node -d prev.local
+
+XF86MonBrightnessUp
+		  xbacklight -inc 10
+		  
+XF86MonBrightnessDown
+		  xbacklight -dec 10
+
+XF86AudioRaiseVolume
+		  pamixer --unmute & pamixer -i 10
+
+XF86AudioLowerVolume
+		  pamixer --unmute & pamixer -d 10
+
+XF86AudioMute
+		  pamixer --toggle-mute

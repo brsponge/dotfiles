@@ -1,0 +1,26 @@
+URxvt.scrollBar: false
+URxvt.font: xft:JetBrainsMono:size=14
+
+URxvt.foreground:   #e6e1cf
+URxvt.background:   #0f1419
+URxvt.cursorColor:  #e6e1cf
+
+URxvt.color0:       #0f1419
+URxvt.color1:       #f07178
+URxvt.color2:       #b8cc52
+URxvt.color3:       #ffb454
+URxvt.color4:       #59c2ff
+URxvt.color5:       #d2a6ff
+URxvt.color6:       #95e6cb
+URxvt.color7:       #e6e1cf
+
+URxvt.color8:       #3e4b59
+URxvt.color9:       #ff8f40
+URxvt.color10:      #131721
+URxvt.color11:      #272d38
+URxvt.color12:      #bfbdb6
+URxvt.color13:      #e6e1cf
+URxvt.color14:      #e6b673
+URxvt.color15:      #f3f4f5
+
+emacs.verticalScrollBars: off
